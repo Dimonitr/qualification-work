@@ -1,6 +1,8 @@
 # qualification-work
 System for tracking the movement of the defined object
 
+#Description in Ukrainian
+
 Виконавець: Федоренко Дмитро Сергійович.
 
 Керівник: Чашка Юрій Михайлович.
