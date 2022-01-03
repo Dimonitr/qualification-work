@@ -143,10 +143,6 @@ namespace KvalWork_Project
             t.SetToolTip(btRecord, "Record");
             t.SetToolTip(btPlay, "Play");
             t.SetToolTip(btExit, "Exit");
-            string path = Application.StartupPath + @"\Theory.htm";
-            wbTheory.Navigate(path);
-            path = Application.StartupPath + @"\FAQ.htm";
-            wbFAQ.Navigate(path);
         }
 
         Graphics UX;
@@ -290,31 +286,26 @@ namespace KvalWork_Project
             if (!record)
             {
                 record = true;
-                btRecord.BackColor = Color.FromArgb(200, 194, 248, 203);
-                btPlay.BackColor = Color.FromArgb(200, 255, 224, 192);
                 k = 0;
             }
             else
             {
                 record = false;
-                btRecord.BackColor = Color.FromArgb(200, 255, 224, 192);
             }
             playing = false;
         }
+        
 
         private void btPlay_Click(object sender, EventArgs e)
         {
             if (!playing)
             {
                 playing = true;
-                btPlay.BackColor = Color.FromArgb(200, 194, 248, 203);
-                btRecord.BackColor = Color.FromArgb(200, 255, 224, 192);
                 k = 0;
             }
             else
             {
                 playing = false;
-                btPlay.BackColor = Color.FromArgb(200, 255, 224, 192);
             }
             record = false;
         }
@@ -341,7 +332,7 @@ namespace KvalWork_Project
 
         private void btTheory_Click(object sender, EventArgs e)
         {
-            wbTheory.BringToFront();
+            tabTheory1.BringToFront();
             panelCrutch.Visible = false;
             np = 80;
             ct = 0;
@@ -371,7 +362,7 @@ namespace KvalWork_Project
 
         private void btInfo_Click(object sender, EventArgs e)
         {
-            wbFAQ.BringToFront();
+            tabFAQ1.BringToFront();
             panelCrutch.Visible = false;
             np = 320;
             ct = 0;

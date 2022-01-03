@@ -63,6 +63,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TabFAQ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabFAQ.Designer.cs">
+      <DependentUpon>TabFAQ.cs</DependentUpon>
+    </Compile>
     <Compile Include="TabMode1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -74,6 +80,12 @@
     </Compile>
     <Compile Include="TabMode2.Designer.cs">
       <DependentUpon>TabMode2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabTheory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabTheory.Designer.cs">
+      <DependentUpon>TabTheory.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
@@ -90,11 +102,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TabFAQ.resx">
+      <DependentUpon>TabFAQ.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TabMode1.resx">
       <DependentUpon>TabMode1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TabMode2.resx">
       <DependentUpon>TabMode2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabTheory.resx">
+      <DependentUpon>TabTheory.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -46,11 +46,11 @@
             this.timerUX = new System.Windows.Forms.Timer(this.components);
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.timerPW = new System.Windows.Forms.Timer(this.components);
-            this.wbTheory = new System.Windows.Forms.WebBrowser();
-            this.wbFAQ = new System.Windows.Forms.WebBrowser();
             this.tabTitle1 = new KvalWork_Project.TabTitle();
-            this.tabMode11 = new KvalWork_Project.TabMode1();
+            this.tabFAQ1 = new KvalWork_Project.TabFAQ();
             this.tabMode21 = new KvalWork_Project.TabMode2();
+            this.tabMode11 = new KvalWork_Project.TabMode1();
+            this.tabTheory1 = new KvalWork_Project.TabTheory();
             this.panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelRight.SuspendLayout();
@@ -118,7 +118,7 @@
             // 
             // btPlay
             // 
-            this.btPlay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btPlay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(248)))), ((int)(((byte)(203)))));
             this.btPlay.FlatAppearance.BorderSize = 0;
             this.btPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btPlay.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -134,7 +134,7 @@
             // 
             // btRecord
             // 
-            this.btRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(248)))), ((int)(((byte)(203)))));
             this.btRecord.FlatAppearance.BorderSize = 0;
             this.btRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btRecord.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -252,31 +252,35 @@
             // 
             this.timerPW.Tick += new System.EventHandler(this.timerPW_Tick);
             // 
-            // wbTheory
-            // 
-            this.wbTheory.Location = new System.Drawing.Point(0, 34);
-            this.wbTheory.MinimumSize = new System.Drawing.Size(20, 20);
-            this.wbTheory.Name = "wbTheory";
-            this.wbTheory.Size = new System.Drawing.Size(657, 436);
-            this.wbTheory.TabIndex = 5;
-            // 
-            // wbFAQ
-            // 
-            this.wbFAQ.Location = new System.Drawing.Point(-2, 34);
-            this.wbFAQ.MinimumSize = new System.Drawing.Size(20, 20);
-            this.wbFAQ.Name = "wbFAQ";
-            this.wbFAQ.Size = new System.Drawing.Size(659, 439);
-            this.wbFAQ.TabIndex = 6;
-            // 
             // tabTitle1
             // 
             this.tabTitle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(255)))), ((int)(((byte)(241)))));
             this.tabTitle1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tabTitle1.Location = new System.Drawing.Point(0, 37);
+            this.tabTitle1.Location = new System.Drawing.Point(0, 34);
             this.tabTitle1.Margin = new System.Windows.Forms.Padding(6);
             this.tabTitle1.Name = "tabTitle1";
-            this.tabTitle1.Size = new System.Drawing.Size(657, 436);
-            this.tabTitle1.TabIndex = 6;
+            this.tabTitle1.Size = new System.Drawing.Size(657, 439);
+            this.tabTitle1.TabIndex = 2;
+            // 
+            // tabFAQ1
+            // 
+            this.tabFAQ1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(255)))), ((int)(((byte)(241)))));
+            this.tabFAQ1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.tabFAQ1.Location = new System.Drawing.Point(0, 34);
+            this.tabFAQ1.Margin = new System.Windows.Forms.Padding(6);
+            this.tabFAQ1.Name = "tabFAQ1";
+            this.tabFAQ1.Size = new System.Drawing.Size(657, 439);
+            this.tabFAQ1.TabIndex = 0;
+            // 
+            // tabMode21
+            // 
+            this.tabMode21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(255)))), ((int)(((byte)(241)))));
+            this.tabMode21.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.tabMode21.Location = new System.Drawing.Point(0, 34);
+            this.tabMode21.Margin = new System.Windows.Forms.Padding(6);
+            this.tabMode21.Name = "tabMode21";
+            this.tabMode21.Size = new System.Drawing.Size(657, 439);
+            this.tabMode21.TabIndex = 5;
             // 
             // tabMode11
             // 
@@ -288,15 +292,15 @@
             this.tabMode11.Size = new System.Drawing.Size(657, 439);
             this.tabMode11.TabIndex = 4;
             // 
-            // tabMode21
+            // tabTheory1
             // 
-            this.tabMode21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(255)))), ((int)(((byte)(241)))));
-            this.tabMode21.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tabMode21.Location = new System.Drawing.Point(0, 34);
-            this.tabMode21.Margin = new System.Windows.Forms.Padding(6);
-            this.tabMode21.Name = "tabMode21";
-            this.tabMode21.Size = new System.Drawing.Size(657, 439);
-            this.tabMode21.TabIndex = 3;
+            this.tabTheory1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(255)))), ((int)(((byte)(241)))));
+            this.tabTheory1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.tabTheory1.Location = new System.Drawing.Point(0, 34);
+            this.tabTheory1.Margin = new System.Windows.Forms.Padding(6);
+            this.tabTheory1.Name = "tabTheory1";
+            this.tabTheory1.Size = new System.Drawing.Size(657, 439);
+            this.tabTheory1.TabIndex = 3;
             // 
             // frmTitle
             // 
@@ -304,19 +308,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(255)))), ((int)(((byte)(241)))));
             this.ClientSize = new System.Drawing.Size(830, 473);
-            this.Controls.Add(this.tabTitle1);
-            this.Controls.Add(this.tabMode11);
-            this.Controls.Add(this.tabMode21);
             this.Controls.Add(this.panelRight);
             this.Controls.Add(this.panelTop);
-            this.Controls.Add(this.wbTheory);
-            this.Controls.Add(this.wbFAQ);
+            this.Controls.Add(this.tabTitle1);
+            this.Controls.Add(this.tabFAQ1);
+            this.Controls.Add(this.tabMode21);
+            this.Controls.Add(this.tabMode11);
+            this.Controls.Add(this.tabTheory1);
             this.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "frmTitle";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panelTop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -340,15 +342,15 @@
         private System.Windows.Forms.Timer timerUX;
         private System.Windows.Forms.Panel panelCrutch;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private TabTitle tabTitle1;
+        private TabTheory tabTheory1;
+        private TabMode1 tabMode11;
+        private TabMode2 tabMode21;
+        private TabFAQ tabFAQ1;
         private System.IO.Ports.SerialPort serialPort1;
         private System.Windows.Forms.Button btRecord;
         private System.Windows.Forms.Button btPlay;
         private System.Windows.Forms.Timer timerPW;
-        private TabMode2 tabMode21;
-        private TabMode1 tabMode11;
-        private TabTitle tabTitle1;
-        private System.Windows.Forms.WebBrowser wbTheory;
-        private System.Windows.Forms.WebBrowser wbFAQ;
     }
 }
 
